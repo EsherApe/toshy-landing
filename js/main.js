@@ -351,30 +351,8 @@ $(document).ready(function () {
       paused: true
     });
 
-
-    //ANIMATIONS IDEAS
-    tlHomeIdeas = new TimelineLite({paused: true});
-    var ideasTitleText = new SplitText(".ideas h2 .txt", {type: "lines"});
-    var ideasTitleLines = ideasTitleText.lines;
-    for (var i = 0; i < ideasTitleLines.length; i++) {
-      ideasTitleLines[i].innerHTML = '<span>' + ideasTitleLines[i].innerHTML + '</span>';
-    }
-    var ideasIntroText = new SplitText(".ideas .block-content p.intro", {type: "lines"});
-    var ideasIntroLines = ideasIntroText.lines;
-    for (var i = 0; i < ideasIntroLines.length; i++) {
-      ideasIntroLines[i].innerHTML = '<span>' + ideasIntroLines[i].innerHTML + '</span>';
-    }
-    tlHomeIdeas.from(".ideas h2 svg > *", 0.8, {drawSVG: "0%", ease: Power3.easeOut}, 0.5)
-    tlHomeIdeas.staggerFrom($(ideasTitleLines).find('span'), 1.2, {y: "100%", ease: Power3.easeInOut}, 0.08, "-=1");
-    tlHomeIdeas.staggerFrom($(ideasIntroLines).find('> span'), 1.2, {y: "100%", ease: Power3.easeInOut}, 0.08, "-=1");
-    tlHomeIdeas.staggerFrom(".ideas .block-content p.intro ~ p", 0.8, {
-      y: 60,
-      opacity: 0,
-      ease: Power3.easeOut
-    }, 0.08, "-=1")
-    tlHomeIdeas.from(".ideas .block-content a", 0.8, {y: 60, opacity: 0, ease: Power3.easeOut}, "-=1")
-    var prllxIdeasVisuel = TweenLite.to(".ideas .visuel-container img", 1, {
-      yPercent: -50,
+    var animationBlockWKN = TweenLite.from('.lien-fort .section-visuel img.brique-wokine', 0.8, {
+      y: -250,
       ease: Linear.easeNone,
       paused: true
     });
@@ -395,13 +373,6 @@ $(document).ready(function () {
           if (elem.hasClass('visible') && action == "add" && !elem.hasClass('animating')) {
             elem.addClass('animating');
             tlCreativity.play().timeScale(1);
-          }
-        }
-
-        if (elem.is('.ideas')) {
-          if (elem.hasClass('visible') && action == "add" && !elem.hasClass('animating')) {
-            elem.addClass('animating');
-            tlHomeIdeas.play().timeScale(1);
           }
         }
 
@@ -474,11 +445,11 @@ $(document).ready(function () {
       var normProject = clamp(normalize(window.pageYOffset, minProject, maxProject), 0, 1);
       prllxVisuelProject.progress(normProject);
 
-      //PRLLX IDEAS VISUEL
-      var minIdeas = $(".ideas .visuel-container").offset().top - wH;
-      var maxIdeas = $(".ideas .visuel-container").offset().top + $(".ideas .visuel-container").outerHeight();
-      var normIdeas = clamp(normalize(window.pageYOffset, minIdeas, maxIdeas), 0, 1);
-      prllxIdeasVisuel.progress(normIdeas);
+      //PRLLX Overloading
+      var minBLOCK = $('.lien-fort').offset().top - $('.lien-fort').outerHeight() * 0.5;
+      var maxBLOCK = $('.lien-fort').offset().top + $('.lien-fort').outerHeight() * 0.5;
+      var normBLOCK = clamp(normalize(window.pageYOffset, minBLOCK, maxBLOCK), 0, 1);
+      animationBlockWKN.progress(normBLOCK)
 
     }
 
@@ -980,11 +951,9 @@ $(document).ready(function () {
 
       if (!$('body').hasClass('page-philo') || wW < 768) {
         return;
-      }
-      ;
+      };
 
       $('.prllx').each(function (index) {
-
         var elm = $(this);
         var minPRLLX = elm.offset().top - wH;
         var maxPRLLX = elm.offset().top + elm.outerHeight();
