@@ -61,12 +61,12 @@ $(document).ready(function () {
 
       if ($('body').hasClass('menuOpen')) {
         $('.navbar-toggle').trigger('click').delay(150).queue(function () {
-          loadPage(targetURL);
+          // loadPage(targetURL);
           // history.pushState({page: targetURL}, null, targetURL);
           $(this).dequeue();
         })
       } else {
-        loadPage(targetURL);
+        // loadPage(targetURL);
         // history.pushState({page: targetURL}, null, targetURL);
       }
 
@@ -951,7 +951,8 @@ $(document).ready(function () {
 
       if (!$('body').hasClass('page-philo') || wW < 768) {
         return;
-      };
+      }
+      ;
 
       $('.prllx').each(function (index) {
         var elm = $(this);
@@ -1274,4 +1275,15 @@ $(document).ready(function () {
 
   }
 
-})
+});
+
+$('.scroll-link').on('click', function (event) {
+  var target = $(this.getAttribute('href'));
+
+  if (target.length) {
+    event.preventDefault();
+    $('html, body').stop().animate({
+      scrollTop: target.offset().top
+    }, 1000);
+  }
+});

@@ -1,59 +1,3 @@
-@font-face {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/gilroy/gilroy-medium-webfont.woff2") format("woff2"), url("../fonts/gilroy/gilroy-medium-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/gilroy/gilroy-bold-webfont.woff2") format("woff2"), url("../fonts/gilroy/gilroy-bold-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/gilroy/gilroy-extrabold-webfont.woff2") format("woff2"), url("../fonts/gilroy/gilroy-extrabold-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/gilroy/gilroy-heavy-webfont.woff2") format("woff2"), url("../fonts/gilroy/gilroy-heavy-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/montserrat/Montserrat-Light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/montserrat/Montserrat-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/montserrat/Montserrat-SemiBold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/montserrat/Montserrat-Bold.woff") format("woff");
-}
-
 /**
  * Owl Carousel v2.2.0
  * Copyright 2013-2016 David Deutsch
@@ -1181,12 +1125,12 @@ header.header .switch-lang {
   }
 }
 
-#menu .menu-container .menu-nav li .msk {
+#menu .menu-container .menu-nav li .menu-link {
   padding: 0px;
   line-height: 1.1;
 }
 
-#menu .menu-container .menu-nav li .msk span {
+#menu .menu-container .menu-nav li .menu-link span {
   -webkit-transition: -webkit-transform 800ms cubic-bezier(1, 0, 0, 1) 0ms;
   -moz-transition: -moz-transform 800ms cubic-bezier(1, 0, 0, 1) 0ms;
   transition: transform 800ms cubic-bezier(1, 0, 0, 1) 0ms;
@@ -1197,67 +1141,67 @@ header.header .switch-lang {
   transform: translateY(100%);
 }
 
-.menuOpen #menu .menu-container .menu-nav li:nth-child(1) .msk span {
+.menuOpen #menu .menu-container .menu-nav li:nth-child(1) .menu-link span {
   -webkit-transition-delay: 300ms;
   -moz-transition-delay: 300ms;
   transition-delay: 300ms;
 }
 
-.menuOpen #menu .menu-container .menu-nav li:nth-child(2) .msk span {
+.menuOpen #menu .menu-container .menu-nav li:nth-child(2) .menu-link span {
   -webkit-transition-delay: 350ms;
   -moz-transition-delay: 350ms;
   transition-delay: 350ms;
 }
 
-.menuOpen #menu .menu-container .menu-nav li:nth-child(3) .msk span {
+.menuOpen #menu .menu-container .menu-nav li:nth-child(3) .menu-link span {
   -webkit-transition-delay: 400ms;
   -moz-transition-delay: 400ms;
   transition-delay: 400ms;
 }
 
-.menuOpen #menu .menu-container .menu-nav li:nth-child(4) .msk span {
+.menuOpen #menu .menu-container .menu-nav li:nth-child(4) .menu-link span {
   -webkit-transition-delay: 450ms;
   -moz-transition-delay: 450ms;
   transition-delay: 450ms;
 }
 
-.menuOpen #menu .menu-container .menu-nav li:nth-child(5) .msk span {
+.menuOpen #menu .menu-container .menu-nav li:nth-child(5) .menu-link span {
   -webkit-transition-delay: 500ms;
   -moz-transition-delay: 500ms;
   transition-delay: 500ms;
 }
 
-.menuOpen #menu .menu-container .menu-nav li:nth-child(6) .msk span {
+.menuOpen #menu .menu-container .menu-nav li:nth-child(6) .menu-link span {
   -webkit-transition-delay: 550ms;
   -moz-transition-delay: 550ms;
   transition-delay: 550ms;
 }
 
-.menuOpen #menu .menu-container .menu-nav li:nth-child(7) .msk span {
+.menuOpen #menu .menu-container .menu-nav li:nth-child(7) .menu-link span {
   -webkit-transition-delay: 600ms;
   -moz-transition-delay: 600ms;
   transition-delay: 600ms;
 }
 
-.menuOpen #menu .menu-container .menu-nav li:nth-child(8) .msk span {
+.menuOpen #menu .menu-container .menu-nav li:nth-child(8) .menu-link span {
   -webkit-transition-delay: 650ms;
   -moz-transition-delay: 650ms;
   transition-delay: 650ms;
 }
 
-.menuOpen #menu .menu-container .menu-nav li:nth-child(9) .msk span {
+.menuOpen #menu .menu-container .menu-nav li:nth-child(9) .menu-link span {
   -webkit-transition-delay: 700ms;
   -moz-transition-delay: 700ms;
   transition-delay: 700ms;
 }
 
-.menuOpen #menu .menu-container .menu-nav li:nth-child(10) .msk span {
+.menuOpen #menu .menu-container .menu-nav li:nth-child(10) .menu-link span {
   -webkit-transition-delay: 750ms;
   -moz-transition-delay: 750ms;
   transition-delay: 750ms;
 }
 
-.menuOpen #menu .menu-container .menu-nav li .msk span {
+.menuOpen #menu .menu-container .menu-nav li .menu-link span {
   position: relative;
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
@@ -1267,7 +1211,7 @@ header.header .switch-lang {
   padding: 0 10px;
 }
 
-.menuOpen #menu .menu-container .menu-nav li .msk span:before {
+.menuOpen #menu .menu-container .menu-nav li .menu-link span:before {
   content: '';
   display: block;
   position: absolute;
@@ -1331,31 +1275,31 @@ header.header .switch-lang {
   pointer-events: none;
 }
 
-#menu .menu-container .menu-nav li a.page-home-link .msk span:before {
+#menu .menu-container .menu-nav li a.page-home-link .menu-link span:before {
   background: #8ef5f1;
 }
 
-#menu .menu-container .menu-nav li a.page-projects-link .msk span:before {
+#menu .menu-container .menu-nav li a.page-projects-link .menu-link span:before {
   background: #d8d8e8;
 }
 
-#menu .menu-container .menu-nav li a.page-ideas-link .msk span:before {
+#menu .menu-container .menu-nav li a.page-ideas-link .menu-link span:before {
   background: #414a6b;
 }
 
-#menu .menu-container .menu-nav li a.page-careers-link .msk span:before {
+#menu .menu-container .menu-nav li a.page-careers-link .menu-link span:before {
   background: #b49a85;
 }
 
-#menu .menu-container .menu-nav li a.page-contacts-link .msk span:before {
+#menu .menu-container .menu-nav li a.page-contacts-link .menu-link span:before {
   background: #89c2b7;
 }
 
-#menu .menu-container .menu-nav li a.page-philo-link .msk span:before {
+#menu .menu-container .menu-nav li a.page-philo-link .menu-link span:before {
   background: #f3c130;
 }
 
-#menu .menu-container .menu-nav li a:hover .msk span:before, #menu .menu-container .menu-nav li a.active .msk span:before {
+#menu .menu-container .menu-nav li a:hover .menu-link span:before, #menu .menu-container .menu-nav li a.active .menu-link span:before {
   -webkit-transform: scaleX(1) translateY(-50%);
   -moz-transform: scaleX(1) translateY(-50%);
   -ms-transform: scaleX(1) translateY(-50%);
@@ -2464,7 +2408,7 @@ h3 .dot {
   vertical-align: middle;
 }
 
-.block-title .mskd {
+.block-title .menu-linkd {
   overflow: hidden;
 }
 
@@ -2586,7 +2530,7 @@ p.intro .dot {
   text-decoration: none;
 }
 
-span.msk {
+span.menu-link {
   display: inline-block;
   overflow: hidden;
   position: relative;
@@ -2595,7 +2539,7 @@ span.msk {
   padding-top: 10px;
 }
 
-span.msk span {
+span.menu-link span {
   display: block;
 }
 
@@ -5454,13 +5398,13 @@ form .parsley-errors-list li {
   padding-top: 5px;
 }
 
-.page-careers h2 .msk {
+.page-careers h2 .menu-link {
   margin-top: -2px;
   padding-top: 0px;
   padding-bottom: 10px;
 }
 
-.page-careers .animated h2 .msk span {
+.page-careers .animated h2 .menu-link span {
   -webkit-transform: translateY(150%);
   -moz-transform: translateY(150%);
   -ms-transform: translateY(150%);
@@ -5468,7 +5412,7 @@ form .parsley-errors-list li {
   transform: translateY(150%);
 }
 
-.page-careers .animated.visible .msk:nth-child(1) span {
+.page-careers .animated.visible .menu-link:nth-child(1) span {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -5479,7 +5423,7 @@ form .parsley-errors-list li {
   transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0.05s;
 }
 
-.page-careers .animated.visible .msk:nth-child(2) span {
+.page-careers .animated.visible .menu-link:nth-child(2) span {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -5490,7 +5434,7 @@ form .parsley-errors-list li {
   transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0.1s;
 }
 
-.page-careers .animated.visible .msk:nth-child(3) span {
+.page-careers .animated.visible .menu-link:nth-child(3) span {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -5501,7 +5445,7 @@ form .parsley-errors-list li {
   transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0.15s;
 }
 
-.page-careers .animated.visible .msk:nth-child(4) span {
+.page-careers .animated.visible .menu-link:nth-child(4) span {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -5512,7 +5456,7 @@ form .parsley-errors-list li {
   transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0.2s;
 }
 
-.page-careers .animated.visible .msk:nth-child(5) span {
+.page-careers .animated.visible .menu-link:nth-child(5) span {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -5523,7 +5467,7 @@ form .parsley-errors-list li {
   transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0.25s;
 }
 
-.page-careers .animated.visible .msk:nth-child(6) span {
+.page-careers .animated.visible .menu-link:nth-child(6) span {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -5534,7 +5478,7 @@ form .parsley-errors-list li {
   transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0.3s;
 }
 
-.page-careers .animated.visible .msk:nth-child(7) span {
+.page-careers .animated.visible .menu-link:nth-child(7) span {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -5545,7 +5489,7 @@ form .parsley-errors-list li {
   transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0.35s;
 }
 
-.page-careers .animated.visible .msk:nth-child(8) span {
+.page-careers .animated.visible .menu-link:nth-child(8) span {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -5556,7 +5500,7 @@ form .parsley-errors-list li {
   transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0.4s;
 }
 
-.page-careers .animated.visible .msk:nth-child(9) span {
+.page-careers .animated.visible .menu-link:nth-child(9) span {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -5567,7 +5511,7 @@ form .parsley-errors-list li {
   transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0.45s;
 }
 
-.page-careers .animated.visible .msk:nth-child(10) span {
+.page-careers .animated.visible .menu-link:nth-child(10) span {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -8758,7 +8702,7 @@ section.user .section-visuel {
 }
 
 .page-philo section.rewards .section-visuel {
-  width: 1200px;
+  width: 100%;
   margin-bottom: 100px;
 }
 
