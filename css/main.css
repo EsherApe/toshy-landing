@@ -3917,7 +3917,7 @@ form .parsley-errors-list li {
 }
 
 .page-home section.vision .skills-container p {
-  color: #4c4a57;
+  color: #ffffff;
   font-size: 1.2rem;
 }
 
@@ -4414,6 +4414,12 @@ form .parsley-errors-list li {
   }
 }
 
+.page-home section.ideas .block-content .inner > p {
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 30px;
+}
+
 .page-home section.ideas .block-content .inner > * {
   margin-bottom: 20px;
 }
@@ -4422,7 +4428,6 @@ form .parsley-errors-list li {
   .page-home section.ideas .block-content .inner > * {
     width: 33.333%;
     margin: 0px;
-    padding: 0 30px;
   }
 }
 
@@ -8468,7 +8473,7 @@ section.user .section-content {
   top: 0px;
   padding-left: 40px;
   padding-right: 40px;
-  margin-top: -58px;
+  margin-top: 40px;
   position: relative;
 }
 
