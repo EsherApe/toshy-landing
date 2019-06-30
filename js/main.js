@@ -295,24 +295,24 @@ $(document).ready(function () {
       paused: true
     });
 
-    //ANIMATIONS VISION
-    tlVision = new TimelineLite({paused: true});
-    var visionTitleText = new SplitText(".vision h2 .txt", {type: "lines"});
-    var visionTitleLines = visionTitleText.lines;
-    for (var i = 0; i < visionTitleLines.length; i++) {
-      visionTitleLines[i].innerHTML = '<span>' + visionTitleLines[i].innerHTML + '</span>';
-    }
-    var visionIntroText = new SplitText(".vision .block-content p.intro", {type: "lines"});
-    var visionIntroLines = visionIntroText.lines;
-    for (var i = 0; i < visionIntroLines.length; i++) {
-      visionIntroLines[i].innerHTML = '<span>' + visionIntroLines[i].innerHTML + '</span>';
-    }
-    tlVision.from(".vision h2 svg > *", 0.8, {drawSVG: "0%", ease: Power3.easeOut}, 0.5)
-    tlVision.staggerFrom($(visionTitleLines).find('> span'), 1.2, {y: "100%", ease: Power3.easeInOut}, 0.08, "-=1");
-    tlVision.staggerFrom($(visionIntroLines).find('> span'), 1.2, {y: "100%", ease: Power3.easeInOut}, 0.08, "-=1");
-    tlVision.from(".vision .block-content p.intro + p", 0.8, {y: 60, opacity: 0, ease: Power3.easeOut}, "-=1")
-    tlVision.from(".vision .block-content a", 0.8, {y: 60, opacity: 0, ease: Power3.easeOut}, "-=0.8")
-
+    // //ANIMATIONS VISION
+    // tlVision = new TimelineLite({paused: true});
+    // var visionTitleText = new SplitText(".vision h2 .txt", {type: "lines"});
+    // var visionTitleLines = visionTitleText.lines;
+    // for (var i = 0; i < visionTitleLines.length; i++) {
+    //   visionTitleLines[i].innerHTML = '<span>' + visionTitleLines[i].innerHTML + '</span>';
+    // }
+    // var visionIntroText = new SplitText(".vision .block-content p.intro", {type: "lines"});
+    // var visionIntroLines = visionIntroText.lines;
+    // for (var i = 0; i < visionIntroLines.length; i++) {
+    //   visionIntroLines[i].innerHTML = '<span>' + visionIntroLines[i].innerHTML + '</span>';
+    // }
+    // tlVision.from(".vision h2 svg > *", 0.8, {drawSVG: "0%", ease: Power3.easeOut}, 0.5)
+    // tlVision.staggerFrom($(visionTitleLines).find('> span'), 1.2, {y: "100%", ease: Power3.easeInOut}, 0.08, "-=1");
+    // tlVision.staggerFrom($(visionIntroLines).find('> span'), 1.2, {y: "100%", ease: Power3.easeInOut}, 0.08, "-=1");
+    // tlVision.from(".vision .block-content p.intro + p", 0.8, {y: 60, opacity: 0, ease: Power3.easeOut}, "-=1")
+    // tlVision.from(".vision .block-content a", 0.8, {y: 60, opacity: 0, ease: Power3.easeOut}, "-=0.8")
+    //
     TweenLite.set(".vision .skills-container", {y: '25%'});
     var prllxVisionSills = TweenLite.to(".vision .skills-container", 1, {
       y: '-25%',
@@ -322,34 +322,34 @@ $(document).ready(function () {
 
 
     //ANIMATIONS CREATIVITY
-    tlCreativity = new TimelineLite({paused: true});
-    var creaTitleText = new SplitText(".creativity h2 .txt", {type: "lines"});
-    var creaTitleLines = creaTitleText.lines;
-    for (var i = 0; i < creaTitleLines.length; i++) {
-      creaTitleLines[i].innerHTML = '<span>' + creaTitleLines[i].innerHTML + '</span>';
-    }
-    var creaIntroText = new SplitText(".creativity .block-content p.intro", {type: "lines"});
-    var creaIntroLines = creaIntroText.lines;
-    for (var i = 0; i < creaIntroLines.length; i++) {
-      creaIntroLines[i].innerHTML = '<span>' + creaIntroLines[i].innerHTML + '</span>';
-    }
-    tlCreativity.from(".creativity h2 svg > *", 0.8, {drawSVG: "0%", ease: Power3.easeOut}, 0.5)
-    tlCreativity.staggerFrom($(creaTitleLines).find('span'), 1.2, {y: "100%", ease: Power3.easeInOut}, 0.08, "-=1");
-    tlCreativity.staggerFrom($(creaIntroLines).find('> span'), 1.2, {y: "100%", ease: Power3.easeInOut}, 0.08, "-=1");
-    tlCreativity.from(".creativity .block-content p.intro + p", 0.8, {y: 60, opacity: 0, ease: Power3.easeOut}, "-=1")
-    tlCreativity.from(".creativity .block-content a", 0.8, {y: 60, opacity: 0, ease: Power3.easeOut}, "-=1")
-
-    TweenLite.set(".creativity .block-content", {y: '25%'});
-    var prllxCreaContent = TweenLite.to(".creativity .block-content", 1, {
-      yPercent: -25,
-      ease: Linear.easeNone,
-      paused: true
-    });
-    var prllxVisuelProject = TweenLite.to(".project-container .project-visual img", 1, {
-      yPercent: -50,
-      ease: Linear.easeNone,
-      paused: true
-    });
+    // tlCreativity = new TimelineLite({paused: true});
+    // var creaTitleText = new SplitText(".creativity h2 .txt", {type: "lines"});
+    // var creaTitleLines = creaTitleText.lines;
+    // for (var i = 0; i < creaTitleLines.length; i++) {
+    //   creaTitleLines[i].innerHTML = '<span>' + creaTitleLines[i].innerHTML + '</span>';
+    // }
+    // var creaIntroText = new SplitText(".creativity .block-content p.intro", {type: "lines"});
+    // var creaIntroLines = creaIntroText.lines;
+    // for (var i = 0; i < creaIntroLines.length; i++) {
+    //   creaIntroLines[i].innerHTML = '<span>' + creaIntroLines[i].innerHTML + '</span>';
+    // }
+    // tlCreativity.from(".creativity h2 svg > *", 0.8, {drawSVG: "0%", ease: Power3.easeOut}, 0.5)
+    // tlCreativity.staggerFrom($(creaTitleLines).find('span'), 1.2, {y: "100%", ease: Power3.easeInOut}, 0.08, "-=1");
+    // tlCreativity.staggerFrom($(creaIntroLines).find('> span'), 1.2, {y: "100%", ease: Power3.easeInOut}, 0.08, "-=1");
+    // tlCreativity.from(".creativity .block-content p.intro + p", 0.8, {y: 60, opacity: 0, ease: Power3.easeOut}, "-=1")
+    // tlCreativity.from(".creativity .block-content a", 0.8, {y: 60, opacity: 0, ease: Power3.easeOut}, "-=1")
+    //
+    // TweenLite.set(".creativity .block-content", {y: '25%'});
+    // var prllxCreaContent = TweenLite.to(".creativity .block-content", 1, {
+    //   yPercent: -25,
+    //   ease: Linear.easeNone,
+    //   paused: true
+    // });
+    // var prllxVisuelProject = TweenLite.to(".project-container .project-visual img", 1, {
+    //   yPercent: -50,
+    //   ease: Linear.easeNone,
+    //   paused: true
+    // });
 
     var animationBlockWKN = TweenLite.from('.lien-fort .section-visuel img.brique-wokine', 0.8, {
       y: -250,
@@ -365,16 +365,16 @@ $(document).ready(function () {
         if (elem.is('.vision')) {
           if (elem.hasClass('visible') && action == "add" && !elem.hasClass('animating')) {
             elem.addClass('animating');
-            tlVision.play().timeScale(1);
+            // tlVision.play().timeScale(1);
           }
         }
 
-        if (elem.is('.creativity')) {
-          if (elem.hasClass('visible') && action == "add" && !elem.hasClass('animating')) {
-            elem.addClass('animating');
-            tlCreativity.play().timeScale(1);
-          }
-        }
+        // if (elem.is('.creativity')) {
+        //   if (elem.hasClass('visible') && action == "add" && !elem.hasClass('animating')) {
+        //     elem.addClass('animating');
+        //     tlCreativity.play().timeScale(1);
+        //   }
+        // }
 
       }
     });
@@ -435,15 +435,15 @@ $(document).ready(function () {
       prllxVisionSills.progress(normSkills);
 
       //PRLLX CREA CONTENT
-      var minCrea = $(".creativity .block-content").offset().top - wH;
-      var maxCrea = $(".creativity .block-content").offset().top + $(".creativity .block-content").outerHeight();
-      var normCrea = clamp(normalize(window.pageYOffset, minCrea, maxCrea), 0, 1);
-      prllxCreaContent.progress(normCrea);
+      // var minCrea = $(".creativity .block-content").offset().top - wH;
+      // var maxCrea = $(".creativity .block-content").offset().top + $(".creativity .block-content").outerHeight();
+      // var normCrea = clamp(normalize(window.pageYOffset, minCrea, maxCrea), 0, 1);
+      // prllxCreaContent.progress(normCrea);
 
-      var minProject = $(".project-container .project-visual").offset().top - wH;
-      var maxProject = $(".project-container .project-visual").offset().top + $(".project-container .project-visual").outerHeight();
-      var normProject = clamp(normalize(window.pageYOffset, minProject, maxProject), 0, 1);
-      prllxVisuelProject.progress(normProject);
+      // var minProject = $(".project-container .project-visual").offset().top - wH;
+      // var maxProject = $(".project-container .project-visual").offset().top + $(".project-container .project-visual").outerHeight();
+      // var normProject = clamp(normalize(window.pageYOffset, minProject, maxProject), 0, 1);
+      // prllxVisuelProject.progress(normProject);
 
       //PRLLX Overloading
       var minBLOCK = $('.lien-fort').offset().top - $('.lien-fort').outerHeight() * 0.5;
