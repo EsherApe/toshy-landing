@@ -3373,7 +3373,7 @@ form .parsley-errors-list li {
 }
 
 .page-home h2 .txt {
-  font-size: 6rem;
+  font-size: 4rem;
   line-height: 0.9;
 }
 
@@ -3578,6 +3578,7 @@ form .parsley-errors-list li {
 }
 
 .page-home section.hello h1 {
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3588,6 +3589,7 @@ form .parsley-errors-list li {
   transform: translate(-50%, -50%);
   white-space: nowrap;
   margin-bottom: 0px !important;
+  line-height: 1;
 }
 
 @media (min-width: 992px) {
@@ -3791,7 +3793,7 @@ form .parsley-errors-list li {
 
 @media (min-width: 1200px) {
   .page-home section.vision h2 {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 }
 
@@ -9714,6 +9716,26 @@ section.user .section-visuel {
   .list-rewards .reward .awwwardsHM svg {
     width: 85px;
     height: 60px;
+  }
+}
+
+.hello-title-sm {
+  display: none;
+}
+
+.top-logo {
+  max-width: 100px;
+}
+
+@media (max-width: 992px) {
+  .hello-title {
+    display: none;
+  }
+  .hello-title-sm {
+    display: block;
+  }
+  .top-logo {
+    min-width: 200px;
   }
 }
 
